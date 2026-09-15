@@ -1,5 +1,5 @@
 ## Commands
 
 ```bash
-docker pull henrotaym/openjdk:25
+docker pull eclipse-temurin:25
 ```
