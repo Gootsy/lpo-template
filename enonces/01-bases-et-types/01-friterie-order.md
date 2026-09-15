@@ -9,11 +9,11 @@ Le patron est formel : **jamais un centime d'écart**.
 
 Tarif de la maison :
 
-| Article | Prix |
-|---|---|
+| Article          | Prix   |
+| ---------------- | ------ |
 | Cornet de frites | 3,50 € |
-| Sauce | 0,80 € |
-| Boisson | 2,50 € |
+| Sauce            | 0,80 € |
+| Boisson          | 2,50 € |
 
 ## Consigne
 
@@ -55,13 +55,6 @@ Rendu      : 4 pièces de 2 €, reste 0,10 €
 
 Oui, la dernière ligne est bien le résultat que Java produit. Ce n'est pas une faute de frappe,
 et c'est tout l'intérêt de l'exercice.
-
-## Indices
-
-- Pour découper un montant : `/` donne le quotient, `%` donne le reste.
-  `1190 / 100` vaut `11`, `1190 % 100` vaut `90`.
-- Pour forcer deux chiffres après la virgule dans l'affichage : `"%d,%02d €".formatted(euros, cents)`.
-  Le `02` complète avec un zéro à gauche, sinon `8,1 €` au lieu de `8,10 €`.
 
 ## Pour aller plus loin
 

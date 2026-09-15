@@ -9,12 +9,12 @@ L'apiculteur veut savoir si la colonie prend du poids, et de combien.
 
 Relevés de la semaine, en grammes :
 
-| Jour | Poids |
-|---|---|
-| Lundi | 24 500 g |
-| Mardi | 25 230 g |
+| Jour     | Poids    |
+| -------- | -------- |
+| Lundi    | 24 500 g |
+| Mardi    | 25 230 g |
 | Mercredi | 26 800 g |
-| Jeudi | 27 145 g |
+| Jeudi    | 27 145 g |
 
 ## Consigne
 
@@ -47,15 +47,6 @@ Moyenne arrondie : 25919 g
 Croissance       : 10.8 %
 Croissance sans le .0 : 10.0 %
 ```
-
-## Indices
-
-- `(double) total / count` et `(double) (total / count)` ne donnent pas la même chose.
-  Regarde bien où tu places les parenthèses, et demande-toi dans quel ordre Java évalue.
-- `Math.round(double)` retourne un `long`, pas un `int`.
-- Pour une décimale à l'affichage : `"%.1f".formatted(value)`.
-- Le `%` est un caractère spécial dans un format. Pour afficher un vrai signe pourcent,
-  il faut l'écrire `%%`.
 
 ## Pour aller plus loin
 

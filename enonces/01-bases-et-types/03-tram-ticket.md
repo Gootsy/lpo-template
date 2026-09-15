@@ -44,14 +44,6 @@ Capacité maximale d'un int         : 2147483647
 La valeur négative n'est pas un bug de ton code. C'est le comportement normal de Java,
 et c'est exactement ce que l'exercice veut te faire voir.
 
-## Indices
-
-- Une journée fait `24 * 60` minutes. L'opérateur `%` ramène toute valeur dans cet intervalle.
-- `Integer.MAX_VALUE` est une constante fournie par Java.
-- Pour la version `long`, il ne suffit pas de déclarer la variable en `long`.
-  Java calcule d'abord, puis affecte : si le calcul se fait entre `int`, le mal est déjà fait.
-  Le transtypage doit intervenir **dans** le calcul, sur le premier opérande.
-
 ## Pour aller plus loin
 
 - Le contrôleur monte à `00:15`. Écris la condition qui dit si le ticket est encore valable.
