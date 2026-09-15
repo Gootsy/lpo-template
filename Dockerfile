@@ -1,1 +1,1 @@
-FROM henrotaym/openjdk:25
+FROM eclipse-temurin:25
