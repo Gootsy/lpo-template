@@ -1,19 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        IO.println(Hero.name);
-        IO.println(Gobelin.name);
+        Hero aria = new Hero("Aria", 100, 12);
+        Hero franck = new Hero("Franck", 500, 3);
+        Gobelin myrun = new Gobelin("Myrun", 200, 50);
+        Gobelin goby = new Gobelin("Goby", 12, 100);
 
-        IO.println(attack(Hero.attack, Gobelin.health));
-        IO.println(attack(Hero.attack, Gobelin.health));
+        franck.attack(myrun);
+        aria.attack(goby);
+        IO.println(franck.health);
+        IO.println(aria.health);
+        IO.println(myrun.health);
+        IO.println(goby.health);
 
-        // Ajouter un Squelette, puis un Troll, chacun avec ses trois variables
-        // et faire affronter les trois par le héros.
-        
-    }
-
-    public static int attack(int attackHero, int gobelinHealth) {
-        public int currentHealth = Gobelin.health;
-
-        return gobelinHealth - attackHero;
+        // Quand un gobelin est attaqué, il riposte automatiquement
     }
 }

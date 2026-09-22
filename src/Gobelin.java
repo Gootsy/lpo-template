@@ -1,6 +1,20 @@
 
 public class Gobelin {
-    public static String name = "Gobelin";
-    public static final int health = 40;
-    public static int attack = 7;
+    public String name;
+    public int health;
+    public int attack;
+
+    public Gobelin(String name, int health, int attack) {
+        this.name = name;
+        this.health = health;
+        this.attack = attack;
+    }
+
+    public void ripost(Hero hero) {
+        hero.health = hero.health - this.attack;
+
+        if (hero.health <= 0) {
+            hero.health = 0;
+        }
+    }
 }
